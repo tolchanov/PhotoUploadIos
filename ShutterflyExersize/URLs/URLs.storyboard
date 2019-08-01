@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MbC-xW-zBD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UR Ls View Controller-->
+        <scene sceneID="6hT-Hk-VXM">
+            <objects>
+                <viewController storyboardIdentifier="URLsViewController" id="MbC-xW-zBD" customClass="URLsViewController" customModule="ShutterflyExersize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TPc-Gp-SRf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gwx-QY-YAm" userLabel="Tbl URLs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="URLCell" id="dRk-av-b3b" customClass="URLCell" customModule="ShutterflyExersize" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dRk-av-b3b" id="Ht7-LV-wNn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MbC-xW-zBD" id="Xyi-CJ-cTa"/>
+                                    <outlet property="delegate" destination="MbC-xW-zBD" id="L6H-XX-G54"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gwx-QY-YAm" firstAttribute="leading" secondItem="AL8-9r-lh6" secondAttribute="leading" id="4BS-hB-idl"/>
+                            <constraint firstItem="AL8-9r-lh6" firstAttribute="bottom" secondItem="gwx-QY-YAm" secondAttribute="bottom" id="QdU-6A-epW"/>
+                            <constraint firstItem="gwx-QY-YAm" firstAttribute="top" secondItem="AL8-9r-lh6" secondAttribute="top" id="TSM-bb-jxo"/>
+                            <constraint firstAttribute="trailing" secondItem="gwx-QY-YAm" secondAttribute="trailing" id="Z8j-oZ-MbF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AL8-9r-lh6"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblURLs" destination="gwx-QY-YAm" id="hbU-9N-6au"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2d-Ie-zJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-72"/>
+        </scene>
+    </scenes>
+</document>
